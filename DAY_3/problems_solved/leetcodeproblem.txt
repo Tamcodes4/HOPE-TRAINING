@@ -1,0 +1,45 @@
+1688. Count of Matches in Tournament
+class Solution {
+    public int numberOfMatches(int n) {
+        return n-1;
+    }
+}
+2549. Count Distinct Numbers on Board
+class Solution {
+    public int distinctIntegers(int n) {
+        if (n==1)
+        return n;
+        else
+        return n-1;
+    }
+}
+191. Number of 1 Bits
+class Solution {
+    public int hammingWeight(int n) {
+        int count =0;
+        int flag;
+        while(n!=0){
+            flag=n%2;
+            n=n/2;
+            if(flag==1)
+            count++;
+        }
+        return count;
+    }
+}
+461. Hamming Distance
+class Solution {
+    public int hammingDistance(int x, int y) {
+       int count =0;
+        int flag1,flag2;
+        while(x!=0 || y!=0){
+            flag1=x%2;
+            flag2=y%2;
+            x=x/2;
+            y=y/2;
+            if(flag1!=flag2)
+            count++;
+        }
+        return count;
+    }
+}
