@@ -1,0 +1,43 @@
+1480. Running Sum of 1d Array
+class Solution {
+    public int[] runningSum(int[] nums) {
+        
+        for(int i=1;i<nums.length;i++){
+            int sum=nums[i-1];
+            nums[i]=sum+nums[i];
+        }
+        return nums;
+    }
+}
+1295. Find Numbers with Even Number of Digits
+class Solution {
+    public int findNumbers(int[] nums) {
+        int count = 0;
+        for (int i : nums) {
+            int digits = (int)(Math.log10(i)) + 1;
+            if (digits % 2 == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+242. Valid Anagram
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) 
+        return false;
+        int[] a = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            a[s.charAt(i) - 'a']++;
+            a[t.charAt(i) - 'a']--;
+        }
+
+        for (int x : a) {
+            if (x != 0) 
+            return false;
+        }
+        return true;
+    }
+}
