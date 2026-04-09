@@ -1,6 +1,4 @@
-package DAY_12.task.repair;
-
-import DAY_12.task.service.Service;
+package DAY_12.task.service;
 
 public class Repair extends Service {
     double partsCost;

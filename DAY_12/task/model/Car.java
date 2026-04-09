@@ -1,5 +1,4 @@
-package DAY_12.task.car;
-import DAY_12.task.vehicle.Vehicle;
+package DAY_12.task.model;
 
 public class Car extends Vehicle {
 

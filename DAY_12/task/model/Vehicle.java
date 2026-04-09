@@ -1,4 +1,4 @@
-package DAY_12.task.vehicle;
+package DAY_12.task.model;
 
 public abstract class Vehicle {
     protected String vehicleNo;

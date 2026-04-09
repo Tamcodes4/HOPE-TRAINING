@@ -1,4 +1,4 @@
-package DAY_12.task.customer;
+package DAY_12.task.model;
 public class Customer {
     private String customerName;
     private String phoneNo;
